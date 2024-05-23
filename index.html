@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Workshop Cryptocurrency</h1>
+        <p>Silahkan mengisi form di bawah ini untuk bergabung dengan workshop kami.</p>
+
+        <form id="registrationForm">
+            <label for="nama">Nama lengkap:</label>
+            <input type="text" id="nama" name="nama"><br><br>
+
+            <label for="umur">Umur:</label>
+            <input type="number" id="umur" name="umur"><br><br>
+
+            <label for="jenis_kelamin">Jenis Kelamin:</label>
+            <select id="jenis_kelamin" name="jenis_kelamin">
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select><br><br>
+
+            <div class="checkbox-container">
+                <label for="setuju">Saya setuju dengan syarat dan ketentuan:</label>
+                <input type="checkbox" id="setuju" name="setuju">
+            </div><br>
+            <button type="button" onclick="tampilkanData()">Kirim</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
